@@ -1,0 +1,293 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2 {
+	font-family:'Fjalla One', Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	color: #298D94;
+	
+}
+
+h3 {
+	font-family:'Quicksand', Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	font-weight:500;
+}
+
+h4 {
+	font-family:'Quicksand', Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight:400;
+}
+
+
+h5 {
+	margin:-20px 0 15px 0px;
+	font-size:1.5em;
+	font-family:'Quicksand', Arial, Helvetica, sans-serif;
+	font-weight:400;
+
+}
+
+p {
+	margin-top: -20;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 35px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-family:'Quicksand', Arial, Helvetica, sans-serif;
+	line-height:1.8em;
+	letter-spacing:.05em;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#2D9EA4;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color:orange;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 100%;
+	
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	width:50%;
+	min-width:400px;
+	max-width:800px;
+	padding: 10px 0px;
+	margin: 0 auto;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+
+.bar1 {
+	width: 100%;
+	background-color:orange;
+	height:50px;
+	min-width:400px;
+	margin: 0 auto;
+	position:fixed;
+	top:0px;
+	z-index:10;
+	box-shadow: 2px 2px 2px #331F00;
+	
+}
+
+.css_background {
+	width: 100%;
+	min-width:400px;
+	height:350px;
+	margin: 0 auto;
+	background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgoJPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjZmZmJy8+Cgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjNGFmNmZmJy8+Cgk8c3ZnIHg9JzQ5LjklJyB5PSc0OS43JScgb3ZlcmZsb3c9J3Zpc2libGUnPgoJCTxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDIwKScvPgoJCTxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDQwKScvPgoJCTxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDYwKScvPgoJCTxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDgwKScvPgoJCTxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDEwMCknLz4KCQk8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxMjApJy8+CgkJPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTQwKScvPgoJCTxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDE2MCknLz4KCQk8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxODApJy8+CgkJPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjAwKScvPgoJCTxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDIyMCknLz4KCQk8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNDApJy8+CgkJPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjYwKScvPgoJCTxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDI4MCknLz4KCQk8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgzMDApJy8+CgkJPHJlY3Qgd2lkdGg9JzIwMDAlJyBoZWlnaHQ9JzIwMDAlJyBmaWxsLW9wYWNpdHk9JzAuMScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzIwKScvPgoJCTxyZWN0IHdpZHRoPScyMDAwJScgaGVpZ2h0PScyMDAwJScgZmlsbC1vcGFjaXR5PScwLjEnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDM0MCknLz4KCQk8cmVjdCB3aWR0aD0nMjAwMCUnIGhlaWdodD0nMjAwMCUnIGZpbGwtb3BhY2l0eT0nMC4xJyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgzNjApJy8+Cgk8L3N2Zz48L3N2Zz4=');
+} 
+
+.bar2 {
+	width: 100%;
+	background-color:orange;
+	height:80px;
+	min-width:400px;
+	margin: 0 auto;
+	
+}
+
+nav {
+	position:fixed;
+	top:15px;
+	min-width:400px;
+	z-index:10;
+	
+}
+
+nav li {
+	display:inline;
+	padding:0 10px;
+	font-family:'Quicksand', Arial, Helvetica, sans-serif;
+	font-weight:700;
+	background-color:orange;
+	
+}
+
+nav a:link {
+	color:white;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+nav a:visited {
+	color: #4E5869;
+	text-decoration: none;
+}
+nav a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #2D9EA4;
+	
+}
+
+.logo {
+	margin-left:11%;
+	position: absolute;
+	top: 100px;
+	
+}
+.headline {
+	position: absolute;
+	top: 340px;
+	min-width:400px;
+}
+
+.select_menu {
+	margin: 30px 0px 40px 0px;
+	
+}
+
+.select_menu ul {
+}
+
+.select_menu li {
+	display:inline;
+	margin: 10px 10px 10px 0; 
+	line-height:200%;
+	
+}
+
+.select_menu li a:link {
+	font-family:'Quicksand', Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	font-size:1.1em;
+	background-color: white;
+	padding:5px 10px;
+	border-radius: 10px;
+	
+}
+
+.select_menu li a:hover {
+	color: white;
+	background-color:#4ABCBC;	
+	padding:5px 10px;
+	border-radius: 10px;
+}
+
+.portfolio {
+	margin-top:-40px;
+	
+}
+.portfolio a href {
+	padding:10px;
+	
+}
+.showcase ul {
+	max-width: 500px;
+	margin:0 auto;
+}
+.showcase li {	
+	line-height:300%;
+	display:inline;
+}
+
+
+section {
+	min-width:400px;
+}
+
+section li {
+	display:inline;
+	padding:0 0px 5px 10px;
+	
+	
+}
+
+#clear {
+	clear:both;
+}
+
+
+#services {
+	background-color:#298D94;
+	color:white;
+	padding:45px 0 25px 25px;
+	width:250px;
+	margin-top:18px;
+	margin-left:35px;
+	margin-right:50px;
+	margin-bottom:30px;
+	float:left;
+	clear:both;
+	
+	
+	
+}
+
+#services ul {
+	padding-left:20px;
+}
+
+#services li {
+	display:list-item;
+	line-height:180%;
+	
+}
+
+#contact_links {
+	padding: 10px 25px;	
+	
+	
+	
+}
+
+
+
+.back {
+	position:relative;
+	top:25px;	
+}
+
+.contact li {
+	display:inline;
+	padding: 0 30px 0 0;	
+	color:white;
+	position:relative;
+	top: 70px;
+	line-height:150%;
+}
+
+
+.bar3 {
+	width: 100%;
+	background-color:orange;
+	height:200px;
+	margin: 0 auto;
+	
+}

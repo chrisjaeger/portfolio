@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chris Jaeger Design</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+
+<!--fonts-->
+ 
+ <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+<!--end fonts-->
+	
+<!--rollover image-->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script><!--end rollover image-->
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+	
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+
+ 	<script type="text/javascript">
+
+
+	$(function(){
+	
+		   /*
+		    Smooth Scroll
+		   */
+		  
+		  $('ul.jump a[href^="#"]').bind('click.smoothscroll',function(e) {
+		   
+		    if (this.hash != '') {
+		
+		      e.preventDefault();
+		2
+		      var desiredOffset = -10;
+		      var target = this.hash;
+		          $target = $(target);
+		      var contentPosTop = $target.offset().top+desiredOffset;
+		
+		      $('html, body').stop().animate({
+		          'scrollTop': contentPosTop
+		      }, 1500, 'swing');
+		
+		     
+		    }
+		
+		  });
+	  
+	});
+  
+	</script>
+    
+</head>
+
+<body>
+
+<div class="container" id="top">
+
+  <header>
+  
+  	<div class="bar1">
+    </div><!--end bar1p-->
+    
+    
+    <div class="css_background">
+    </div><!--end css_background-->
+    
+    <div class="bar2">
+    </div><!--end bar2-->
+    
+  </header>
+  
+  <div class="content">
+  
+  <nav>
+ 	<ul>
+    	<li><a href="index.html">PORTFOLIO</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+    	<li><a href="resume.html" >RESUME</a></li>
+    	<li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+ </nav>
+ 
+ 	<div class="logo">
+   	<a href="index.html"><img src="images/logo.png" title="Chris Jaeger Design logo" width="300px"></a>
+ 	</div><!--end logo-->
+    
+    <div class="headline">
+    	<h1>RESUME</h1>
+    </div><!--end headline-->
+    
+    <section>
+ 	<h3>To download a PDF of my resume <a href="resume.pdf" target="_blank">CLICK&nbsp;HERE.</a></h3>
+ </section>
+ 
+ <section>
+ <h2>Objective</h2>
+ <p>To make creative and effective designs.
+I enjoy creating all forms of art from print
+and illustration to motion and interactive.
+I love challenging myself with new opportunities
+and seeking projects that can expand my skill sets.</p>
+
+<h2>Education</h2>
+<p>Stevenson University / Owings Mills, MD<br>
+BS in Visual Communication Design: Motion Graphics track<br>
+Current GPA - 3.9<br>
+Graduate - May 2014</p>
+
+<h2>Design Skills</h2>
+<p>Adobe Photoshop<br>
+Adobe Illustrator<br>
+Adobe InDesign<br>
+Adobe After Effects<br>
+Adobe Dreamweaver<br>
+Adobe Flash<br>
+HTML & CSS Coding<br>
+Fine art Illustration</p>
+
+<h2>Memberships</h2>
+<h3>AIGA Student Chapter Stevenson University</h3>
+<p>Member 2011 - Present</p>
+<h3>Sigma Alpha Pi National Society
+of Leadership and Success</h3>
+<p>Member 2012 - Present</p>
+<h3>Who’s Who Among Students
+in American Colleges & Universities</h3>
+<p>Member 2013 - Present</p>
+<h3>Alpha Chi National Honor Society</h3>
+<p>Member 2013 - Present</p>
+
+<h2>Design Experience</h2>
+<h3>Artist-in-Residence Workshop 2012</h3>
+<h4>Spring 2012 / Stevenson, MD</h4>
+<p>Participated in a three day workshop with
+Carlson Bull from
+Bully Entertainments creating ideas for augmented reality and
+going through the process of pitching an idea to a client.</p>
+
+<h3>Concept art Internship</h3>
+<h4>Spring 2012 - Summer 2012 / Stevenson, MD</h4>
+<p>Worked with Dr. Bodnar on his educational graphic novel
+about bioinformatics. Conceptualized characters and scenery while
+also creating mock comic book pages of completed product. </p>
+
+<h3>Artist-in-Residence Workshop 2013</h3>
+<h4>Spring 2013 / Stevenson, MD</h4>
+<p>Participated in a rigorous three day workshop with
+Gail Anderson creating a series of posters for the university’s
+Relay For Life event and experimented with different
+forms of typography.</p>
+
+<h2>Work Experience</h2>
+
+<h3>Student Activities Graphic Coordinator</h3>
+<h4>Spring 2012 - Present / Stevenson, MD</h4>
+<p>Design posters, banners, door hangers, t-shirts, and mugs for
+school events, such as Spring Concert, Homecoming, and New
+Student Day. Created a new format for our monthly calendar, so
+that it could provide more information about events on campus.</p>
+
+<h3>Graphic Intern at Tenable Network Security</h3>
+<h4>Summer 2013 / Columbia, MD</h4>
+<p>Worked with the Marketing Department at Tenable Network
+Security for four months. Designed handouts, web images,
+presentation diagrams, icons, and collateral. Experienced tight
+deadlines and collaborated with marketing to create finished
+products from start to finish.</p>
+
+	
+ </section>
+     
+     
+ 
+ <section class="back">
+ 	<ul class="jump">
+    	<a class="nav-item" href="#top"><h3>Back to Top</h3></a>
+    </ul>
+ </section>
+ 
+ 
+ <div class="contact">
+ 	<ul>
+    	<li>Designed by Chris Jaeger.</li>
+        <li>443.244.1320</li>
+        <li>cjaeger@stevenson.edu</li>
+    </ul>
+ </div><!--end contact-->
+   
+    </div><!-- end .content -->
+    
+  <footer>
+  
+  	<div class="bar3"><br>
+    </div><!--end bar3-->
+  </footer>
+</div><!-- end .container -->
+</body>
+</html>

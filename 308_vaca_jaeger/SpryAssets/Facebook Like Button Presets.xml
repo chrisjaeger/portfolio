@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget>
+  <id><![CDATA[2149022]]></id>
+  <version><![CDATA[1.0.1]]></version>
+  <name><![CDATA[Facebook Like Button]]></name>
+  <presets>
+    <preset name="like me">
+      <description/>
+      <properties>
+        <property name="borderTypeDefault" value="hidden"/>
+        <property name="colorScheme" value="light"/>
+        <property name="width" value="300"/>
+        <property name="verb" value="like"/>
+        <property name="height" value="25"/>
+        <property name="layout" value="standard"/>
+        <property name="url" value="http://www.facebook.com/chris.jaeger.33"/>
+        <property name="borderColorDefault" value="#000000"/>
+      </properties>
+    </preset>
+  </presets>
+</widget>

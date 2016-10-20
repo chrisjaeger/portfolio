@@ -1,0 +1,130 @@
+html {
+	background-image: url(images/background.jpg);
+	background-color: grey;
+	max-width: 1000px;
+	margin: 0 auto;
+	}
+#banner {
+	
+	
+	}
+img [src="images/logo.gif" alt="Oakland United Methodist Church logo"] {
+	
+	z-index:2;
+	position: relative;
+	top:50px;
+	
+	
+	}
+#navigation_sidebar {
+	background-color: #093058;
+	position:relative;
+	width:984px;
+	height:110px;
+	z-index:1;
+	}
+#navigation_sidebar ul li {
+	display: inline;
+	font-family:helvetica, arial, san-serif;
+	color:white;
+	padding: 1em;
+	margin: .5em;
+	width:50px;
+	position:relative;
+	left: 275px;
+	bottom: 40px;
+	}
+#navigation_sidebar a:link { 
+	text-decoration: none;
+	color:white;
+	padding: 1em;
+				
+				}
+#navigation_sidebar ul li a:visited {
+	text-decoration: none;
+	color:rgb(237,34,36);
+	padding: 1em;
+	}
+
+#navigation_sidebar ul li a:hover {
+	text-decoration: none;
+	background-color: rgb(237,34,36);
+	padding: 1em;
+	width:50px;
+	color:white;
+				}
+
+#navigation_sidebar ul li a:active {
+	text-decoration: none;
+	color:white;
+	}
+#wrapper {
+	background-color:white;
+	margin: 0 auto;
+	position: relative;
+	left:50px;
+	bottom:10px;
+	min-width: 600px;
+	box-shadow: 5px 5px 5px black;
+	
+	}
+#main_content {
+	background-color: white;
+	margin: 20px;
+	
+	}
+
+#footer {
+	background-color:white;
+	color:black;
+	height:50px;
+	margin:80px 0px 0px 0px;
+	}
+p {
+	line-height:1.5em;
+	
+	}
+h1 {
+	font-family:georgia,serif;
+	letter-spacing:.25em;
+	}
+#filler {
+	margin:35px 50px;
+	font-family:helvetica, arial, san-serif;
+	}
+#women {
+	width: 250px;
+	border:3px solid maroon;
+	padding:5px 10px;
+	margin: 50px 5px 30px -20px;
+	background-color:pink;
+	
+	
+	
+	}
+	
+#men {
+	width: 250px;
+	border:3px solid royalblue;
+	padding:5px 10px;
+	margin: 50px 5px 30px -20px;
+	position:absolute;
+	left: 370px;
+	top:365px;
+	background-color:lightblue;
+	}
+	
+#youth {
+	width: 250px;
+	border:3px solid darkgreen;
+	padding:5px 10px;
+	margin: 50px 5px 30px -20px;
+	position:absolute;
+	left: 670px;
+	top:365px;
+	background-color:lightgreen;
+	}
+h2 { 
+	
+	line-height: 1.1em;
+	}

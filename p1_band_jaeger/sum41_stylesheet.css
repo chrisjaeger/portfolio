@@ -1,0 +1,94 @@
+#list {
+	border: .5em solid black;
+	width:25em;
+	padding:0.5em 1em;
+	font-family:Georgia;
+	background-color: white;
+	}
+
+	}
+ol {
+	line-height: 2em;
+	font-family:verdana;
+	font-size:1em;
+	
+	}
+#tracks {
+	letter-spacing:.2em;
+	line-height: 1.5em;
+	
+	}
+ul {
+	line-height:2em;
+	font-family:Georgia;
+	}
+p {
+	width: 30em;
+	font-family: Georgia;
+	}
+table {
+	border: .5em solid black;
+	width:30em;
+	padding:0.5em 1em;
+	background-color: white;
+	}
+h1,h2 {
+	font-family: helvetica;
+	
+	}
+
+#name {
+	font-size: 4em;
+	text-align:center;
+	background-color:black;
+		color: white;
+		padding: .5em
+		
+	}
+html {
+	background:lightgray;
+	}
+#album {
+		background-color:black;
+		color: white;
+		padding: .5em;
+		}
+#headline {
+	background-color:black;
+		color: white;
+		padding: .5em;
+		width: 10em;
+		}
+a:link { color: deeppink;
+font-family:helvetica;}
+a:visited {
+	color: maroon;
+	font-family:helvetica;	
+}
+a:hover { color: blue;
+		text-decoration: none;
+		font-family:helvetica;
+		}
+a:active { color: black;
+font-family:helvetica;}
+
+
+#killer {
+border: .5em solid black;
+padding: 1em 0em 1em 1em;
+}
+
+#infected {
+border: .5em solid black;
+padding: 1em 0em 1em 1em;
+}
+
+#chuck {
+border: .5em solid black;
+padding: 1em 0em 1em 1em;
+}
+
+#power {
+border: .5em solid black;
+padding: 1em 0em 1em 1em;
+}

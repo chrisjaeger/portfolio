@@ -1,0 +1,337 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4 Helvetica, Arial, sans-serif;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	background-color: none;
+	font-family:Helvetica, arial, sans-serif
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration:none;
+	color:#dd4699;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo~~ */
+.header {
+	width:850px;
+	margin:0 auto;
+	
+}
+
+.logo {
+	width:300px;
+	margin:0 auto;
+	}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.filler {
+	background-color:white;
+	width:850px;
+	margin:0 auto;
+	padding:25px 25px 0px 25px;
+	
+	
+	
+}
+
+.newsfeed img {
+		padding: 0px;
+		margin: 10px 35px;
+		position:relative;
+		left:20px;
+		bottom:20px;
+		
+}
+
+img [src="images/coverpic.jpg"] {
+	margin: 25px;
+}
+img [src="images/bestvintage.jpg"] {
+	float:right;
+	padding: 10px;
+}
+img [src="images/gogologo.png"] {
+	position:relative;
+	left: 250px;
+	width:300px;
+}
+img [src="images/event1.jpg"] {
+	box-shadow: 5px 5px 5px black;
+	
+}
+h1 {
+	background-color:white;
+	color: #dd4699;
+	letter-spacing: .2em;
+	font-family:  verdana, Helvetica, Arial, sans-serif;
+	
+}
+
+.content {
+	padding: 10px 0px;
+}
+
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	width:850px;
+	margin:auto;
+	position:relative;
+	top:25px;
+	
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.shadow {
+	display: inline;
+	width:50px;
+	height:50px;
+	
+	postion: relative;
+	top: -125px;
+	left: -25px;
+	}
+.social ul li{
+	
+	display: inline;
+	list-style-type:none;
+	padding: 1em;
+	position:relative;
+	left:150px;
+	bottom:40px;
+}
+.navbar ul li{
+	
+	position:relative;
+	left: 70px;
+}
+.cover {
+	width:850px;
+	padding:25px 50px 0px -50px;
+}
+.more {
+	background-color: #561035;
+	color:white;
+	width: 177px;
+	height: 30px;
+	padding:10px 0px;
+	z-index:1000px;
+	position: relative;
+	left: 643px;
+	bottom: 75px;
+	
+}
+
+.more a:link {
+	color:#f1cbe0;
+	text-decoration:none;
+	
+	
+	
+}
+.more a:visited {
+	color: #dd4699;
+	
+	text-decoration:none;
+	
+	
+}
+.more a:hover {
+	color:white;
+	
+}
+.more a:focus {
+	color: #561035;
+	text-decoration:none;
+	
+
+}
+.news {
+	width:300px;
+	position:relative;
+	left: 280px;
+	bottom: 15px;
+	
+}
+.video {
+	width:500px;
+	margin:auto;
+	position: relative;
+	right:0px;
+	bottom: 375px;
+}
+.vidright {
+		position:relative;
+		left: 650px;
+		bottom: 788px;
+}
+.storyvideo {
+	max-width:800px;
+	max-height:720px;
+	margin:auto
+	
+}
+.members ul li{
+	list-style-type:none;
+	padding: 0px 0px 5px 0px; 
+}
+.members ul {
+	margin: -10px 0px 0px -22px;
+}
+.stacey , .bus{
+	width:800px;
+	margin:auto;
+	
+}
+.staceybio  {
+	float:right;
+	width:420px;
+	padding:40px 0px;
+	
+}
+.staceypic {
+	float:left;
+	width:350px;
+	padding:0px 10px 20px 10px;
+	
+}
+
+
+.bus {
+	float:left;
+	width:350px;
+	padding:0px 10px;
+	
+}
+.busbio {
+	float:right;
+	width:420px;
+	padding:30px 0px;
+	
+}
+.bio {
+	width:800px;
+	margin:auto;
+	height: 680px;
+}
+.page {
+	max-width:850px;
+	marign:auto;
+	border:2px solid black;
+}
+.container table {
+	border: 5px solid #dd4699;
+	padding: 10px 20px;
+	height: 250px;
+	text-align:left;
+	width: 550px;
+	z-index:1000px;
+ }
+.busstop table{
+	position:relative;
+	left:250px;
+	top:0px;
+	width:550px;
+	margin:atuo;
+	max-height:250px;
+}
+.address {
+		width: 500px;	
+		position:relative;
+		bottom:550;
+		left:25px;
+		margin:-250px 20px 20px 40xp;
+}
+.articleimg {
+	width: 250px;
+	max-height: 250px;
+	margin: 0px 0px;
+	position: relative;
+	bottom: 250px;
+	z-index:-1000px;
+}
+.followbus {
+	position:absolute;
+	top:650px;
+	
+}
+.schedulebio {
+	width:800px;
+	margin:auto;
+	
+}
+.box {
+	color:#dd4699;
+	letter-spacing:.2em;
+
+}
+.contactpic {
+	float:right
+}
+.contactbio {
+	min-height:800;
+}
+.contactpage {
+	width:700px;
+}
+
+ 

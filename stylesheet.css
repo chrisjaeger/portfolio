@@ -1,0 +1,158 @@
+#navigation_sidebar ul li {
+			
+			
+			font-family: helvetica, arial, san-serif;
+			font-size: 1.5em;
+			
+			background-color:black;
+			border:3px gray solid;
+			margin: 0 0 0 -2em;
+			padding: .5em;
+			text-align:center;
+			letter-spacing:.3em;
+			list-style-type:none;
+			}
+#navigation_sidebar ul li a:link { color:white;
+				text-decoration: none;
+				}
+#navigation_sidebar ul li a:visited {
+				color:gray;
+				}
+
+#navigation_sidebar ul li a:hover {
+				color:yellow;
+				}
+
+#navigation_sidebar ul li a:active {
+				color:black;
+				}
+				
+ul#web li a:link { color:maroon;
+				
+				}
+ul#web li a:visited {
+				color:dimgrey;
+				}
+
+ul#web li a:hover {
+				color:yellow;
+				text-decoration: none;
+				}
+
+ul#web li a:active {
+				color:black;
+				}
+
+#bottom a:link { color:maroon;
+				
+				}
+#bottom a:visited {
+				color:dimgrey;
+				}
+
+#bottom a:hover {
+				color:yellow;
+				text-decoration: none;
+				}
+
+#bottom a:active {
+				color:black;
+				}
+img[src="images/subman.png"] {
+	float: right;
+	}
+
+	
+h1 { 
+	margin: 1em .5em .5em 190px;
+	font-family: helvetica, arial, san-serif;
+	background-color: black;
+	border: 8px solid black;
+	color:yellow;
+	padding:0em .5em;
+	letter-spacing:.1em;
+	}
+h2 {font-family: helvetica, arial, san-serif;
+	padding:0em .5em;
+	}
+	
+	
+img[src="images/logo.png"] {
+		margin:0px 200px;
+		}
+html {
+	min-width:800px;
+	background-image:url(images/tile.png)
+	
+		}
+img[src="images/tile.png"] {
+		padding:2em;
+		}
+p {
+	max-width:600px;
+	min-width:300px;
+	font-family: georgia;
+	padding: 0em 2em;
+	line-height:1.5em;
+	}
+caption {
+	font-size:1.1em;
+		margin: 1em 2em .5em 2em;
+	font-family: helvetica, arial, san-serif;
+	background-color: black;
+	border: 13px solid black;
+	color:yellow;
+	padding:0em .5em;
+	letter-spacing:.3em;
+		}
+ul#web li {
+		padding: .5em;
+		font-size: 1em;
+		font-family: helvetica, arial, san-serif;
+		letter-spacing:.3em;
+		line-height:1.3em;
+		}
+table {
+	padding:0em 2em;
+	
+	}
+td {
+	padding: .3em}	
+
+#bottom {
+padding: .5em;
+		font-size: 1em;
+		font-family: helvetica, arial, san-serif;
+		}
+#wrapper {
+	min-width:800px
+	}
+#header {
+	background-color:black;
+	height:60px;
+	}
+#navigation_sidebar {
+	width 130px;
+	float:left;
+	
+	margin:0em 0em 0em 2em;
+	}
+#main_content {
+	width:60%;
+	float: left;
+	background-color:white;
+	margin: 0px 20px;
+	}
+#adspace {
+	width:150px;
+	float: left;
+	background-color:black;
+	}
+#footer {
+	clear:both;
+	background-color:black;
+	height:50px;
+	}
+#adspace p {
+		color:white;
+		}
